@@ -5,15 +5,15 @@ Podczas kopiowania tekstu do schowka systemowego automatycznie zostanie doklejon
 Przykładowa konfiguracja w functions.php:
 
 
-add_filter('clipboard_append_minimum_length', function($length) {
+            add_filter('clipboard_append_minimum_length', function($length) {
 
-        return 200; // minimalna długość kopiowanego musi wynosić powyżej X znaków aby tekst się dokleił do treści
-});
+                    return 200; // minimalna długość kopiowanego musi wynosić powyżej X znaków aby tekst się dokleił do treści
+            });
 
-add_filter('clipboard_append_text', function($text) {
+            add_filter('clipboard_append_text', function($text) {
 
-        return 'Tutaj Twój tekst do doklejenia przy kopiowaniu do schowka';
-});
+                    return 'Tutaj Twój tekst do doklejenia przy kopiowaniu do schowka';
+            });
 
 
 ![screenshot](/screenshot.png?raw=true "screenshot") 
